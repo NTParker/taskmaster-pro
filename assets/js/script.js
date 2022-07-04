@@ -97,7 +97,7 @@ $(".list-group").on("blur", "input[type='text']", function () {
   // get the task's position in the list of other li elements
   var index = $(this).closest(".list-group-item").index();
 
-  // update task in array and re-save to localstorage
+  // update task in array and re-save to local storage
   tasks[status][index].date = date;
   saveTasks();
 
